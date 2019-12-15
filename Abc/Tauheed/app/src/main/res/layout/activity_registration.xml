@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.Tauheed.todolist.Registration">
+
+
+    <EditText
+            android:id="@+id/userReg"
+            android:layout_width="393dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="184dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+            android:id="@+id/emailId"
+            android:layout_width="393dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="Email Id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userReg" />
+
+    <Button
+            android:id="@+id/text"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="104dp"
+            android:text="Start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailId" />
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarid"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:background="#F44336"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            app:layout_constraintBottom_toTopOf="@+id/userReg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
